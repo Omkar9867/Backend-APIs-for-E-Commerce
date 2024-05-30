@@ -1,0 +1,67 @@
+POST http://localhost:5000/api/v1/products
+Content-Type: application/json
+
+{   
+    "name": "Four product",
+    "description": "Four product description",
+    "richDescription": "Four product richdescription",
+    "image": "testfour.com",
+    "brand": "brand four ",
+    "price": 25,
+    "category": "6656e0e95243942fa4008d53",
+    "countInStock": 10,
+    "rating": 4,
+    "numReviews": 22,
+    "isFeatured": false
+}
+
+###
+GET http://localhost:5000/api/v1/products
+###
+PUT http://localhost:5000/api/v1/products/66572c2c732b5665fb9e3504
+Content-Type: application/json
+
+{
+    "name": "1 product",
+    "description": "One product description",
+    "richDescription": "1 product richdescription",
+    "image": "testone.com",
+    "brand": "brand 1 ",
+    "price": 25,
+    "category": "6656e0ae5243942fa4008d4d",
+    "countInStock": 10,
+    "rating": 4,
+    "numReviews": 22,
+    "isFeatured": true
+}
+
+
+###
+GET http://localhost:5000/api/v1/categories
+
+###
+GET http://localhost:5000/api/v1/categories/6656e0ae5243942fa4008d4d
+
+###
+POST http://localhost:5000/api/v1/categories
+Content-Type: application/json
+
+{
+    "name": "computers",
+    "icon": "icon-compute",
+    "color": "#40404"
+}
+
+###
+PUT http://localhost:5000/api/v1/categories/6656e0ae5243942fa4008d4d
+Content-Type: application/json
+
+{
+    "name": "health2",
+    "icon": "icon-helath2",
+    "color": "#50404"
+}
+
+###
+DELETE http://localhost:5000/api/v1/categories/6656e0bd5243942fa4008d50
+    
